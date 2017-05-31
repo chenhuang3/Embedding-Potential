@@ -88,7 +88,7 @@ for isp=1:nspin
   end
 
   % --------- Octave/ Matlab interps() function -----------
-  ssss = interp3(x,y,z,intp_array,xq,yq,zq);
+  ssss = interp3(x,y,z,intp_array,xq,yq,zq,'linear');
 
   % transpose the ssss to the FORTRAN format 
   % note that Octave/Matlab flips the X and Y 
